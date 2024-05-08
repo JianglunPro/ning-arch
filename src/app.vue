@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <NuxtWelcome />
+  <div class="min-h-screen flex items-center justify-center bg-black text-white">
+    鲲浪
   </div>
 </template>
 
