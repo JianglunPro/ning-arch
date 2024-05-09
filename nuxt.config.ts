@@ -6,7 +6,13 @@ export default defineNuxtConfig({
   srcDir: 'src',
 
   // 模块
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+
+  // 浅色和深色模式
+  // 和 tailwindcss 配合
+  colorMode: {
+    classSuffix: '',
+  },
 
   // 环境变量
   // 可以被 .env 文件中的值覆盖
