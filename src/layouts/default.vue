@@ -1,8 +1,8 @@
 <template>
   <div>
-    <header>KUNLANG</header>
-    <main>
+    <LayoutDefaultHeader />
+    <LayoutDefaultMain>
       <slot></slot>
-    </main>
+    </LayoutDefaultMain>
   </div>
 </template>
