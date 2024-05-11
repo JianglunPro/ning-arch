@@ -6,7 +6,10 @@ export default defineNuxtConfig({
   srcDir: 'src',
 
   // 模块
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  modules: [
+    // nuxt ui 默认已经包含  @nuxtjs/tailwindcss 和 @nuxtjs/color-mode
+    '@nuxt/ui',
+  ],
 
   // 浅色和深色模式
   // 和 tailwindcss 配合
