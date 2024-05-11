@@ -16,6 +16,8 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@iconify-json/ri": "^1.1.20",
+    "@iconify-json/solar": "^1.1.9",
     "@nuxt/ui": "^2.16.0"
   }
 }

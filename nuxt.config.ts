@@ -31,4 +31,9 @@ export default defineNuxtConfig({
       rootPass: 'xxx',
     },
   },
+
+  // 图标集
+  ui: {
+    icons: ['solar', 'ri'],
+  },
 });
