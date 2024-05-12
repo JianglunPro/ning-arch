@@ -1,5 +1,9 @@
 <template>
-  <div></div>
+  <div>
+    <div class="mb-6">
+      <LayoutReceptionProviderWechatButton scene="signup" />
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
