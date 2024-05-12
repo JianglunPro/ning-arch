@@ -1,6 +1,6 @@
 export default defineAppConfig({
   ui: {
-    primary: 'violet',
+    // primary: 'violet',
     gray: 'neutral',
     button: {
       font: 'font-normal',
