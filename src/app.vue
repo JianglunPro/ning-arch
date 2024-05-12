@@ -9,6 +9,7 @@
   >
     <NuxtPage />
     <UNotifications />
+    <AppCommandPalette />
   </NuxtLayout>
 </template>
 
