@@ -1,13 +1,25 @@
 <template>
   <div class="flex-1 flex flex-col items-center justify-center">
     <div class="flex gap-4 items-center">
-      <UIcon name="i-heroicons-moon" class="text-4xl" />
-      <UIcon name="i-solar-ghost-smile-linear" class="text-4xl" />
-      <UIcon name="i-ri-wechat-fill" class="text-4xl" />
+      <UKbd>{{ metaSymbol }}</UKbd>
+      <UKbd>O</UKbd>
     </div>
+    <UModal v-model="isModalOpen">
+      <UCard>宁皓网</UCard>
+    </UModal>
   </div>
 </template>
 
 <script setup lang="ts">
-const appConfig = useAppConfig();
+const { metaSymbol } = useShortcuts();
+
+const isModalOpen = ref(false);
+
+defineShortcuts({
+  meta_o: {
+    handler: () => {
+      isModalOpen.value = true;
+    },
+  },
+});
 </script>
