@@ -3,7 +3,7 @@ export default defineAppConfig({
     primary: 'violet',
     gray: 'neutral',
     button: {
-      font: 'font-light',
+      font: 'font-normal',
     },
   },
 });

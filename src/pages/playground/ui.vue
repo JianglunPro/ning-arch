@@ -1,25 +1,34 @@
 <template>
   <div class="flex-1 flex flex-col items-center justify-center">
     <div class="flex gap-4 items-center">
-      <UKbd>{{ metaSymbol }}</UKbd>
-      <UKbd>O</UKbd>
+      <UButton @click="onClick">通知</UButton>
     </div>
-    <UModal v-model="isModalOpen">
-      <UCard>宁皓网</UCard>
-    </UModal>
   </div>
 </template>
 
 <script setup lang="ts">
-const { metaSymbol } = useShortcuts();
+const onClick = () => {
+  const toast = useToast();
 
-const isModalOpen = ref(false);
-
-defineShortcuts({
-  meta_o: {
-    handler: () => {
-      isModalOpen.value = true;
-    },
-  },
-});
+  toast.add({
+    id: 'message-1',
+    title: '宁皓网',
+    description: '欢迎参加独立开发者训练营。',
+    icon: 'i-solar-basketball-outline',
+    // timeout: 0,
+    actions: [
+      {
+        label: '忽略',
+        color: 'green',
+        variant: 'outline',
+        click: () => {},
+      },
+      {
+        label: '接受',
+        color: 'green',
+        click: () => {},
+      },
+    ],
+  });
+};
 </script>
